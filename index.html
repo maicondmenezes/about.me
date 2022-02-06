@@ -6,16 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Presentation page of the resume and portfolio of Maicon de Menezes">
   <title> Maicon de Menezes - Resume & Projects </title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link 
+    rel="stylesheet" 
+    type="text/css"
+    href="static/css/style.css"
+  >
 </head>
 
 <body>
+  <!--
   <header class="resumeHeader">
     <img
       class="resumeLogo"      
       alt="Logo"      
       src="https://github.com/maicondmenezes/maicondmenezes/blob/main/logo.png?raw=true"
     >
+  
     <h2 class="resumeHeaderTitle">Resume & Portfolio</h2>
     <nav class="resumeHeaderMenu">
 
@@ -30,191 +43,157 @@
 
     </nav>
   </header>  
-
+  -->
   <main class="resumeContent">
 
-    <section class="resumeHeaderSection">
-      <img
-          class="resumeHeaderSectionImage"          
-          alt="Profile Photo"
-          src="https://github.com/maicondmenezes/maicondmenezes/blob/main/foto.jpeg?raw=true"
-      >  
-      <div class="resumeHeaderDetails">
-        <div class="resumeHeaderSectionTitle">
-          <h1>Maicon de Menezes Oliveira ( aka  <a href="https://www.instagram.com/soulmaicon">SoulmaicoN</a> )</h1>
-          <sup>35 years old</sup>
-        </div>      
-        
-        <h2 class="resumeHeaderTopic"> Address </h2>
-        <hr>
-        <i>Avenida Sebastião Eugênio de Camargo 35, Butantã, São Paulo - SP - Brazil</i>
-        
-        
-        <h2 class="resumeHeaderTopic"> Contact </h2> 
-        <hr>
-        <div class="resumeContactItens">
-          
-          <div class="resumeContactLine">
-            <img
-              class="resumeContactIconWhatsapp"          
-              alt="Whatsapp"          
-              src="https://github.com/maicondmenezes/maicondmenezes/blob/main/whatsapp.png?raw=true"
-            >      
-            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55983144824"> +55 (21) 983 144 824</a>
-          </div>
-        
-          <div class="resumeContactLine">
-            <img
-              class="resumeContactIconGmail"          
-              alt="E-mail"          
-              src="https://github.com/maicondmenezes/maicondmenezes/blob/main/gmail.png?raw=true"
-            >      
-            <a href="mailto:mdmolveira@inf.ufpel.edu.br">mdmoliveira@inf.ufpel.edu.br</a>
-          </div>
-          
-          <div class="resumeContactLine">
-            <img
-              class="resumeContactIconLinkedin"
-              alt="Linkedin Profile"
-              src="https://github.com/maicondmenezes/maicondmenezes/blob/main/linkedin.png?raw=true"
-            >      
-            <a href="https://www.linkedin.com/in/maicon-oliveira-73141b71">linkedin.com/maicon-oliveira-73141b71</a>
-          </div>
+    <section class="leftSide">
+
+      <div class="resumeProfile">
+        <div class="photoBox">
+          <img
+              class="resumeHeaderSectionImage"          
+              alt="Profile Photo"
+              src="https://github.com/maicondmenezes/maicondmenezes/blob/main/foto.jpeg?raw=true"
+          >  
         </div>
+        <h2>
+          Maicon de Menezes           
+          <br>
+          <span>Python Developer</span>
+        </h2>
+      </div>      
+
+      <div class="resumeContact">
+        <h3 class="title"> Contact Info</h3> 
         
-              
-        <h2 class="resumeHeaderTopic">Known Languages</h2>
-        <hr>        
-        <div class="resumeLanguagesIcons" style="display: inline_block">
-          <img 
-            class="resumeLanguagesIcon"               
-            alt="Python"              
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-          >
-          <img 
-            class="resumeLanguagesIcon"              
-            alt="Django"              
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg"
-          >
-          <img 
-            class="resumeLanguagesIcon"              
-            alt="Js"              
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
-          >
-          <img 
-            class="resumeLanguagesIcon"              
-            alt="Ts"              
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"
-          >
-          <img 
-            class="resumeLanguagesIcon"              
-            alt="React"              
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-          >
-          <img 
-            class="resumeLanguagesIcon"              
-            alt="HTML"              
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-          >
-          <img 
-            class="resumeLanguagesIcon"              
-            alt="CSS"            
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">            
-        </div>   
+        <ul>
+          <li>
+            <span class="icon">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>              
+            </span>
+            <span class="text">
+              <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55983144824">
+                +55 (21) 983 144 824
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="icon">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </span>
+            <span class="text">
+              <a href="mailto:mdmolveira@inf.ufpel.edu.br">
+                mdmoliveira@inf.ufpel.edu.br
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="icon">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </span>
+            <span class="text">
+              <a href="/">
+                maicondmenezes.com
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="icon">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </span>
+            <span class="text">
+              <a href="https://www.linkedin.com/in/maicondmenezes">
+                linkedin.com/maicondmenezes
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="icon">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </span>
+            <span class="text">
+              <a href="https://goo.gl/maps/ueEgnngWSBzfdJJW7">
+                São Paulo, SP, Brazil
+              </a>
+            </span>
+          </li>
+        </ul> 
       </div>
 
-    </section>
+      <div class="resumeContact education">
+        <h3 class="title"> Education</h3> 
+        
+        <ul>
+          <li>
+            <h5>
+              <i>Bachelor Degree in Computing Science – unfinished</i>
+            </h5>            
+            <h4>Pelotas Federal University – 
+              <a href="https://portal.ufpel.edu.br/">UFPel</a> (pt-br abbr)
+            </h4>
+          </li>
+          <li>
+            <h5>
+              <i>Computing Technical High School</i>
+            </h5>            
+            <h4>Santa Cruz State Technical School, - 
+              <a href="https://www.etesc.g12.br/">ETESC</a> (pt-br abbr) –
+              <a href="http://www.faetec.rj.gov.br/">FAETEC</a>
+            </h4>
+          </li>
+        </ul> 
+      </div>     
 
-    <section class="resumeSectionAbstract">
+      <div class="resumeContact language">
+        <h3 class="title"> Languages</h3> 
+        
+        <ul>
+          <li>
+            <span class="text">Portuguese</span>
+            <span class="percent">
+              <div style="width: 100%;"></div>
+            </span>
+          </li>
+          <li>
+            <span class="text">English</span>
+            <span class="percent">
+              <div style="width: 65%;"></div>
+            </span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="resumeContact socialMedia">
+        <span>
+          <a href="https://www.facebook.com/maicondmenezes">
+            <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.github.com/maicondmenezes">
+            <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.instagram.com/soulmaicon">
+            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.twitter.com/maicondmenezes">
+            <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+          </a>
+        </span>
+      </div>        
 
-      <h2 class="resumeTopic"> Objectives </h2>
-      <hr>
-      <p class="resumeSectionAbstractParagraph">
-        Developing technologies skills on Sentiment Analysis in Natural Language Processing to brazilian portuguese, contributing to expand texts communication tools.
-      </p>
-      
-      <h2 class="resumeTopic"> Abstract </h2>
-      <hr>
-      <p class="resumeSectionAbstractParagraph">        
-        I'm a dinamic and communicative professional with more than 14 years in technical support, technical education and customer service bussiness. I developed throughout my career a helpful and proactive professional profile, focused on developing tools and procedures for save time and enlarge productivite of my team. I acquired many skills involving people management and customer relantionship, the latter being a constant feature in all sectors I've worked. I'm searching for an oportunity to aplly my academic knowledge combined with the skills mentioned above.
-      </p>
-
-    </section>
-
-    <section class="resumeSectionProfessional">
-
-      <h2 class="resumeTopic"> Education </h2>
-      <hr> 
-      
-      <h3 class="resumeSubtopic"> Pelotas Federal University – 
-       <a href="https://portal.ufpel.edu.br/">UFPel</a> (pt-br abbr) 
-      </h3>
-      <p class="resumeSectionProfessionalParagraph">
-        <i>Computing Science – unfinished</i>
-      </p>      
-      
-      <h3 class="resumeSubtopic"> Santa Cruz State Technical School, - 
-        <a href="https://www.etesc.g12.br/">ETESC</a> (pt-br abbr) –
-        <a href="http://www.faetec.rj.gov.br/">FAETEC</a>
-      </h3>
-      <p class="resumeSectionProfessionalParagraph">
-        <i>Computing Technical High School</i>
-      </p> 
-      
-      <h2 class="resumeTopic"> Professional History </h2>      
-      <hr> 
-      <p class="resumeSectionProfessionalParagraph">
-        <i>I work as a freelancer providing Technical Support services, IT Infrastructure Project Development and IT Private Classes since 2005.</i>
-      </p>
-            
-      <h3 class="resumeSubtopic"> PYTHON DEVELOPER, <a href="www.bradootech.com">BRADOOTECH</a> - OUT/2021 </h3>      
-      <p class="resumeSectionProfessionalParagraph">
-        Develop web applications based on the python Odoo framework, Postgree database and applying agile methodology.
-      </p>
-      
-      <h3 class="resumeSubtopic"> TECHNICAL SUPPORT ANALYST, <a href="https://www.netcenter.com.br/">NETCENTER</a> - JUN/2021 - NOV/2021</h3>      
-      <p class="resumeSectionProfessionalParagraph">
-        Provide technical support to employees of the school units of the 10th Regional Education Coordination of the Municipal Department of Education of Rio de Janeiro - RJ. Register and update services performed. Assist in the management of technical service reports and monitoring of IT assets of the 189 school units and for this task I am developing the ratPad tool with the code available at <https://github.com/maicondmenezes/ratPad>
-      </p>
-      
-      <h3 class="resumeSubtopic"> SERVICE MANAGER, <a href="https://www.instagram.com/blackbisonbr">BLACK BISON BURGUER BAR</a> - MAY/2015 – FEB/2021 </h3>      
-      <p class="resumeSectionProfessionalParagraph">
-        I started acting as waiter always has great sales results and constant positive feedbacks and customer recommendations too, from 2019 i became responsible for managing the service of the restaurant, which at the time had a team of 4 employees (3 waitresses and 1 receptionist). Since the beginning of the security measures due to the pandemic, I was responsible for updating the company's financial management and operational inventory management systems, where i applied my computer skills to develop interactive python code with excel spreadsheets and operate Restaurant Management Systems and Delivery application management tools (Ifood).
-      </p>
-      
-      <h3 class="resumeSubtopic"> IT ANALYST, RASCAL RESTAURANTS - MAR 2013 / AGU 2013 </h3>      
-      <p class="resumeSectionProfessionalParagraph">
-        Hired as an IT Analyst, working in fact as a regional IT manager for the 3 network units located in RJ. Contributing to the optimization of the company's technological resources (internet supply contracts, acquisition of new equipment and maintenance and recovery of unavailable assets) reducing operating costs in the sector by approximately 20%. I was also responsible for mediating contractual conflicts for the provision of services between the company and the administration of malls and shopping centers to get the best service at a fair price.
-      </p>
-      
-      <h3 class="resumeSubtopic"> DEVELOPMENT INTERN, <a href="https://www.ufpel.edu.br">UFPel</a> - NOV DE 2011 / FEB DE 2012 </h3>      
-      <p class="resumeSectionProfessionalParagraph">        
-        Assist in the development of the new university management system in PHP. Assist in the creation of documentation relevant to the software architecture used (MVC). Assist in creating tutorials for the IDEs used.
-      </p>
-      
-      <h3 class="resumeSubtopic"> COMPUTING INSTRUCTOR, MICROLINS - OUT DE 2006 / JUL DE 2011 </h3>      
-      <p class="resumeSectionProfessionalParagraph">       
-        Teach Hardware, Networks and Basic Computing Classes. Assist in the maintenance and supervision of technology laboratories. Assist in the administrative routines of the pedagogical sector.
-      </p>
-      
-      <h3 class="resumeSubtopic"> TECHINICAL SUPPORT, VALE S/A - JUN DE 2007 / JUN DE 2009 </h3>      
-      <p class="resumeSectionProfessionalParagraph">
-        Provide technical support to VALE S/A employees in ports and offices in RJ and ES. Monitor the DATACENTERS of the ports. Monitor external service of equipment under warranty. Register and update services performed.
-      </p>
-      
-      <h2 class="resumeTopic"> Qualifications </h2>      
-      <hr> 
-      <h3 class="resumeSubtopic"> Maintenance and Assembly of Microcomputers – CETEP Santa Cruz </h3>      
-      <h3 class="resumeSubtopic"> TOEFEL - ITP - Inglês Sem Fronteiras - UFPEL </h3>
-    
     </section>
 
   </main>
-
+  <!--
   <footer class="resumeFooter">
     <i class="resumeFooterInfo">developed and design by <a href="https://www.github.com/maicondmenezes">maicondmenezes</a> &copy; | São Paulo, SP - Brazil - fev, 2022  
   </footer>
-
+  -->
 </body>
 
 </html>

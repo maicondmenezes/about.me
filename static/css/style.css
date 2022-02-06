@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@500&display=swap');
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;  
+  font-family: 'Ubuntu', sans-serif;
+}
+a {
+  color:#076ec9b7;
+}
+a:hover{
+  color: #3033f070;
+}
+body {
+  font-size: 100%;
+  background: #add8e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.resumeHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px 10px 0px;
+}
+
+.resumeLogo {  
+  height: 42px;
+}
+
+.resumeHeaderMenu {
+  display: flex;
+  gap: 32px;
+}
+
+.resumeHeaderTitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #F0F8FF;
+}
+
+.resumeHeaderMenuItem {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #F0F8FF;
+}
+
+.resumeHeaderMenuItem:hover{
+  color: #242424;
+}
+
+.resumeHeaderSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 0px 15px 0px;
+}
+
+.resumeHeaderSectionImage {
+  height: 383.5px;  
+}
+
+.resumeHeaderDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.resumeHeaderSectionTitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+
+}
+
+.resumeHeaderTopic {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  padding: 15px 0px 0px 0px;
+}
+
+.resumeContent{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  background: #fff;
+  border-top: 0.4px solid #242424;
+  margin-bottom: 48px;
+}
+
+.resumeContent .leftSide {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+
+.resumeProfile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.resumeProfile .photoBox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.resumeProfile .photoBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resumeProfile h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+.resumeProfile h2 span {  
+  font-size: 0.8em;
+  font-weight: 100;  
+}
+
+.resumeContact {
+  padding-top: 40px;
+}
+
+.resumeContact .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.resumeContact ul {
+  position: relative;
+}
+
+.resumeContact ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.resumeContact ul li .icon{ 
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.resumeContact ul li .icon:hover{ 
+  color: #fff;
+}
+
+.resumeContact ul li span {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.resumeContact ul li a {
+  color: #534f4f;  
+}
+
+.resumeContact ul li a:hover {
+  color:#076ec9b7;
+}
+
+.resumeContact.education li{
+  margin-bottom: 15px;
+}
+
+.resumeContact.education h5{
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.resumeContact.education h4{
+  color: #fff;
+  font-weight: 500;
+}
+
+.resumeContact.language {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+  
+.resumeContact.language .percent{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
+}
+
+.resumeContact.language .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #03a9f4;
+}
+
+.resumeContact.socialMedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.resumeContact.socialMedia span a {
+  color: #534f4f;  
+}
+
+.resumeContact.socialMedia span a:hover {
+  color:#076ec9b7;
+}
+
+.resumeContent .rightSide {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+.resumeFooter {  
+  padding: 32px;
+  border-top: 0.4px solid #242424;
+}
+
+.resumeFooterInfo {
+  display: block;
+  margin: 0 auto;
+}
