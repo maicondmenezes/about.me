@@ -18,6 +18,13 @@ body {
   min-height: 100vh;
 }
 
+.resumeHeader .fa {
+  color:#fff;
+  font-size: 20px;
+  font-weight: 600;
+  width: 20px;
+}
+
 .resumeHeader {
   display: flex;
   flex-direction: row;
