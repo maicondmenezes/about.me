@@ -281,7 +281,7 @@ body {
 }
 
 .resumeAbstract .box .yearCompany {
-  min-width: 150px;
+  width: 150px;
   margin-right: 20px;
 }
 
@@ -291,9 +291,74 @@ body {
   font-weight: 600;
 }
 
+.qualification {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
 .resumeAbstract .box .text {
   color: #2a7da2;
   font-size: 16px;
+}
+
+.wrapper {
+  display: flex;  
+  justify-content: center;
+}
+
+.collapsible {
+  max-width: 450px;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.collapsible label {
+  position: relative;
+  font-weight: 600;
+  background: #f0f0f0;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0, .1), 0 4px 11px 0 rgba(0,0,0,.08);
+  color: #2a7da2;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 4px;
+  z-index: 1;  
+}
+
+.collapsible label:before {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 30px;
+  right: 30px;
+  background: url(static/img/arrow.svg) no-repeat 0 0;
+}
+
+.collapsibleText {
+  max-height: 1px;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 1.4;
+  position: relative;
+  top: -100%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.collapsible input {
+  display: none;
+}
+
+.collapsible input:checked ~ .collapsibleText {
+  max-height: 300px;
+  padding-bottom: 25px;
+  background: #fff;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0, .1), 0 4px 11px 0 rgba(0,0,0,.08);
+  opacity: 1;
+  top: 0;
 }
 
 .skills .box .skillIcon {
