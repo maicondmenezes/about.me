@@ -17,24 +17,41 @@
     rel="stylesheet" 
     type="text/css"
     href="static/css/style.css"
+    content="width=device-width,initial-scale=1.0"
   >
 </head>
 
 <body>
-  
-  <header class="resumeHeader">
-    <i class="fa fa-code" aria-hidden="true"></i>
-      
-    <h2 class="resumeHeaderTitle">Resume & Portfolio</h2>
+  <input type="checkbox" name="" id="check">
+  <header class="resumeHeader">    
+    <label for="check">
+      <span class="fa fa-times" id="times"></span>
+      <span class="fa fa-bars" id="bars"></span>
+    </label>
+    <h2 class="resumeHeaderTitle"><i class="fa fa-code" aria-hidden="true"></i> Resume & Portfolio</h2>
     <nav class="resumeHeaderMenu">
-      <a class="resumeHeaderMenuItem" href="/">Profile</a>
-      <a 
-        href="https://github.com/maicondmenezes?tab=repositories" 
-        class="resumeHeaderMenuItem"
-      >
-        Projects
-      </a>
-      <a class="resumeHeaderMenuItem">Message</a>
+      <ol>
+        <li>
+          <a class="resumeHeaderMenuItem" href="/">
+            <i class="fa fa-file-text-o" aria-hidden="true"></i> 
+            Profile
+          </a>
+        </li>
+        <li>
+          <a 
+            href="https://github.com/maicondmenezes?tab=repositories" 
+            class="resumeHeaderMenuItem"
+          >
+            <i class="fa fa-terminal" aria-hidden="true"></i>            
+            Projects
+          </a>
+        </li>
+        <li>
+          <a class="resumeHeaderMenuItem">
+            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+            Message
+          </a>
+        </li>
     </nav>
   </header>  
   

@@ -18,23 +18,97 @@ body {
   min-height: 100vh;
 }
 
-.resumeHeader .fa {
-  color:#fff;
-  font-size: 20px;
-  font-weight: 600;
-  width: 20px;
-}
-
-.resumeHeader {
+  .resumeHeader {
+  height: 100%;
+  width: 250px;
+  position: absolute;
+  z-index: 1;
+  transition: 0.5s ease;
+  transform: translateX(-250px);
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px 0px 10px 0px;
-  border-bottom: 2px solid #333;
-  background: #003147;
+  flex-direction: column;    
+  border: 2px solid #333;
+  background: #161616;
 }
 
+.resumeHeader .resumeHeaderTitle {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  background: linear-gradient(30deg,#161616,#076ec9b7) 
+}
+
+.resumeHeader ol{
+  padding-top: 30px;
+  width: 100%;
+  list-style: none;
+  text-align: left;  
+}
+
+.resumeHeader ol li {
+  display: block;
+  width: 100%;
+}
+.resumeHeader ol li a {
+  padding: 30px;  
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+.resumeHeader ol li a i{ 
+  width: 50px;
+  font-size: 20px;
+  text-align: center;  
+}
+
+.resumeHeader ol li:hover a { 
+  background: #030303;
+  color: #076ec9b7;
+  letter-spacing: 5px;
+}
+
+input {
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+.resumeHeader label span {
+  position: absolute;
+  right: -40px;
+  font-size: 25px;
+  border-radius: 3px;
+  color: #fff;  
+  cursor: pointer;  
+  padding: 3px 8px;
+  background: #000;
+}
+
+#bars {
+  background: #076ec9b7;
+}
+
+#check:checked ~ .resumeHeader{
+  transform: translateX(0);
+}
+
+#check:checked ~ .resumeHeader #bars{
+  display: none;
+}
+
+#check:checked ~ .resumeContent {
+  transform: scale(1.1);  
+  filter: brightness(50%);
+}
 .resumeLogo {  
   height: 42px;
 }
@@ -58,6 +132,14 @@ body {
 }
 
 .resumeHeaderMenuItem:hover{
+  color: #242424;
+}
+
+.resumeHeaderMenuItem a:hover{
+  color: #242424;
+}
+
+.resumeHeaderMenuItem i:hover{
   color: #242424;
 }
 
@@ -100,9 +182,11 @@ body {
   width: 100%;
   max-width: 1000px;
   min-height: 1000px;
-  margin: 50px;
+  margin: 10px 50px;
   background: #fff;  
   margin-bottom: 48px;
+  transition: 0.5s;  
+  filter: brightness(95%);
 }
 
 .resumeContent .leftSide {
